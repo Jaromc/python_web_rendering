@@ -7,8 +7,8 @@ This is a simple but complicated way of rendering 2D data from a python script r
 ### To Run ###
 
 * Run docker build ```docker build -t python_web .```
-* Start the container ```docker run -it --rm -p 7777:7777 -v <this_dir>:/tmp python_web```
-* Enter ```/tmp```
+* Start the container ```docker run -it --rm -p 7777:7777 -v <this_dir>:/myvol python_web```
+* Enter ```/myvol```
 * Run ```python3 server.py```
 * From a new terminal run ```python3 generator.py```. This script only runs for a fixed amount of time so you'll need to restart it if needed. 
 * Now the server and generator are running in docker we can open ```frontend.html``` from the host machine and see the output.
